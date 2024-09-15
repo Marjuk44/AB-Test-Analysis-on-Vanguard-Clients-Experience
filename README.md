@@ -1,5 +1,5 @@
 # AB-Test-Analysis-on-Vanguard-Clients-Experience
-Applying EDA, KPI's, testing hypothesis &amp; making dashboard to uncover the A/B test result and come up with a data driven decision.
+Applying EDA, KPI's, testing hypothesis & making dashboard to uncover the A/B test result and come up with a data driven decision.
 
 ## Introduction
 In 2017 cusomer experience team at Vanguard launched a new digital interface (UI). Applied it on a group of clients and collect their data for 3 months. In the same time frame they also create a group of clients who is using the traditional process. With this two group of clients they conduct an A/B test. The goal is to: 
@@ -24,10 +24,10 @@ Clients interacted with Vanguard’s traditional online process in "Control Grou
 - Mapping gender & process step column
 - Defining 2 dataframe on each group to conduct separate analysis
 
-To analyze error rate was a difficult challenge. Whoever come back to a previous step or any previous step or jump any steps need to consider as error. The shift(-1) tag helps to define this and then stored it as true or false in a new column.
+To analyze the "Error Rate" was a difficult challenge. Whoever come back to a previous step or any previous step or jump any steps need to consider as error. The shift(-1) function helps to define this and then stored it as true or false in a new column.
 The process to analyse time spent on each step was another challenge. Overcome through following step:
 
-- first converting date_time column to data type date time
+- First converting date_time column to data type date time
 - Sorting them on visit_id and date_time
 - Calculating the time spent / difference between one step to another: Groupby visit ID and date_time.diff().dt.total_seconds
 - Dropping the 'NaT' for further analyse
