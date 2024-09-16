@@ -1,3 +1,6 @@
+![Screenshot 2024-09-16 171120](https://github.com/user-attachments/assets/bd5971d4-9c38-4467-8fc7-de80a524244c)
+
+
 # AB-Test-Analysis-on-Vanguard-Clients-Experience
 Applying EDA, KPI's, testing hypothesis & making dashboard to uncover the A/B test result and come up with a data driven decision.
 
